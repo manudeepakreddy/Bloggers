@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+</head>
+
+<body class="container">
+    <form class="contactinfo" onsubmit="return ValidateForm()" >
+    <br>
+    <h1> Application form</h1>
+    <div class = "row">
+        <lable> Full name</lable>
+        <input type="text" class="form-control" placeholder="name" name="name">
+        <div class="error" id="nameerr"></div>
+    </div>
+    <br>
+    <div class="row">
+        <label> Email address</label>
+        <input type="text" class="form-control" placeholder="email" id="email">
+        <div class="error" id="emailerr"></div>
+    </div>
+    <br>
+    <div class="row">
+        <label> Mobile numbeer</label>
+        <input type="number" class="form-control" placeholder="+91" id="mobnum" >
+        <div class="error" id="moberr"></div>
+    </div>
+    <br>
+    <br>
+    <label>Select Country:</label>
+    <select class="selectpicker countrypicker" data-flag="true" >
+    <option value="india">India</option>
+    <option value="UAE">UAE</option>
+    <option value="canada">CANADA</option>
+    <option value="nepal">NEPAL</option>
+    </select>
+    <br>
+    <br>
+    <label>Gender</label>
+    <div class="checkbox">
+        <label><input type="radio" value="male">Male</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="radio" value="female">Female</label>
+      </div>
+      <br>
+    </div>
+    <div class="row">
+        <label>Hobbies <i>(Optional)</i></label>
+        <div class="form-inline">
+            <br>
+            <label><input type="checkbox" name="hobbies[]" value="sports"> Sports</label>
+            <br>
+            <label><input type="checkbox" name="hobbies[]" value="movies"> Movies</label>
+            <br>
+            <label><input type="checkbox" name="hobbies[]" value="music"> Music</label>
+        </div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-success btn-sm btn-add-phone"><span class="glyphicon glyphicon-plus"></span> Submit</button>
+</form>
+</body>
+</html>
